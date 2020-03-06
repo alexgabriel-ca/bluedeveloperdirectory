@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../developer.manifest">
+	<head>
+		<title>Blue Developer Directory - Registration</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div><p>Register as a Developer</p></div>
+		<button onclick="getLocation()">Find Me</button>
+		<script>
+			function getLocation() {
+				if (navigator.geolocation) {
+					navigator.geolocation.getCurrentPosition(showPosition);
+				} else {
+					alert("Geo location is not supported by your browser.");
+				}
+			}
+
+			function showPosition(position) {
+				alert("Latitude: " + position.coords.latitude + ", longitude" + position.coords.longitude);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" manifest="../developer.manifest">
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/style.css" />
+		<title>Blue Developer Directory</title>
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1><span class="blue-text">Blue</span> Developer Directory</h1>
+				<h2>Find A Developer <span class="white-text">NOW</span></h2>
+			</header>
+			<nav id="menu">
+				<ul>
+					<li class="menuitem"><a href="../index.html">Home</a></li>
+					<li class="menuitem"><a href="about.html">About Us</a></li>
+					<li class="menuitem"><a href="browse.html">Browse Developers</a></li>
+					<li class="menuitem"><a href="register.html">Register as a Developer</a></li>
+					<li class="menuitem"><a href="contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+			<nav id="leftmenu">
+				<h3>Links</h3>
+				<ul>
+					<li><a href="browse.html">SEO</a></li>
+					<li><a href="browse.html">PHP</a></li>
+					<li><a href="browse.html">Ajax</a></li>
+					<li><a href="browse.html">jQuery</a></li>
+					<li><a href="browse.html">Web Design</a></li>
+					<li><a href="browse.html">Web Programming</a></li>
+					<li><a href="browse.html">Content Creation</a></li>
+					<li><a href="browse.html">Internet Marketing</a></li>
+					<li><a href="browse.html">XHTML Templates</a></li>
+				</ul>
+			</nav>
+			<section>
+				<h2>Blue Developer Directory! </h2>
+				<h3>Who Are We?</h3>
+				<p>We are a fictional web site and service that list top web developers around the world. Search and browse fictional web developers on our web site absolutely FREE!</p>
+				<h3>What Skills Do Our Developers Have?</h3>
+				<p>Our listed fictional web developers skill ranges from Graphic design with Photoshop, Illustrator and Fireworks to markup languages like HTML5, XHTML and XML to programming languages such as JavaScript, PHP, Python and ASP</p>
+				<video id="ad" width="500" height="350" controls>
+					<source src="../video/ad.mp4" type="video/mp4">
+				</video>
+				<div style="width:400px;">
+					<button onclick="playPause()">Play/Pause</button>
+					<button onclick="makeBig()">Big</button>
+					<button onclick="makeSmall()">Small</button>
+					<button onclick="makeNormal()">Normal</button>
+				</div>
+				<script>
+					var myVideo = document.getElementById("ad");
+
+					function playPause() {
+						if (myVideo.paused) {
+							myVideo.play();
+						} else {
+							myVideo.pause();
+						}
+					}
+
+					function makeBig() {
+						myVideo.width = 750;
+					}
+
+					function makeSmall() {
+						myVideo.width = 250;
+					}
+
+					function makeNormal() {
+						myVideo.width = 500;
+					}
+				</script>
+			</section>
+		</div>
+		<div style="clear: both"></div>
+		<footer>
+			&copy;2018 Blue Developer Directory
+		</footer>
+	</body>
+</html>
